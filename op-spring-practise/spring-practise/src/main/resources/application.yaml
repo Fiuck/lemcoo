@@ -1,0 +1,9 @@
+server:
+  port: 1001
+spring:
+  application:
+    name: spring-practise
+
+logging:
+  level:
+    top.lemcoo.springpractise: trace

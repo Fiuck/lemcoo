@@ -1,0 +1,7 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /api
+spring:
+  application:
+    name: spring-security-practise

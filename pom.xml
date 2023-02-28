@@ -13,6 +13,7 @@
     <modules>
         <module>op-spring-practise</module>
         <module>op-core</module>
+        <module>op-pattern-practise</module>
     </modules>
 
     <parent>

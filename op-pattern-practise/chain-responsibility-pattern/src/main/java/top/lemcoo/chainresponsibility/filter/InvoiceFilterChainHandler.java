@@ -1,7 +1,6 @@
 package top.lemcoo.chainresponsibility.filter;
 
 import cn.hutool.core.collection.CollUtil;
-import com.zczy.common.exception.ServiceException;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.annotation.AnnotationAwareOrderComparator;
@@ -20,7 +19,7 @@ public class InvoiceFilterChainHandler {
     @PostConstruct
     public void init() {
         if (CollUtil.isEmpty(chains)) {
-            throw new ServiceException("not found invoice chain handler");
+            throw new RuntimeException("not found invoice chain handler");
         }
         // 如果没有按照Order注解排序，则手动排序
         chains.sort(AnnotationAwareOrderComparator.INSTANCE);
